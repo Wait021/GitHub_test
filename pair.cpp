@@ -3,13 +3,17 @@
 using namespace std;
 #include <algorithm>
 #include <string>
-int main() {
-        string str = "Hello, world!";
+int main()
+{
+    string str = "Hello, world!";
     size_t pos = str.find("o"); // 查找字符 'o' 的第一次出现位置
 
-    if (pos!= string::npos) { // 如果找到了
+    if (pos != string::npos)
+    { // 如果找到了
         cout << "Found 'o' at position: " << pos << endl;
-    } else { // 如果未找到
+    }
+    else
+    { // 如果未找到
         cout << "'o' not found in the string." << endl;
     }
 
@@ -20,7 +24,8 @@ int main() {
 
     using pii = pair<int, int>;
     vector<pii> f(100, pii(2, 3));
-    for (int i = 0; i < 100; i++) {
+    for (int i = 0; i < 100; i++)
+    {
         f[i] = make_pair(i, i + 1);
 
         cout << f[i].first << " " << f[i].second << endl;
