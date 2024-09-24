@@ -18,12 +18,12 @@ int main() {
 
     cout << string::npos << endl;
 
-    // using pii = pair<int, int>;
-    // vector<pii> f(100, pii(2, 3));
-    // for (int i = 0; i < 100; i++) {
-    //     f[i] = make_pair(i, i + 1);
+    using pii = pair<int, int>;
+    vector<pii> f(100, pii(2, 3));
+    for (int i = 0; i < 100; i++) {
+        f[i] = make_pair(i, i + 1);
 
-    //     cout << f[i].first << " " << f[i].second << endl;
-    // }
+        cout << f[i].first << " " << f[i].second << endl;
+    }
     return 0;
 }
